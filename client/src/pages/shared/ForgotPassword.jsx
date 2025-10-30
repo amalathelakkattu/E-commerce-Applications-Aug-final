@@ -21,8 +21,8 @@ if(role === 'seller'){
 
 // Handle admin role
 if(role === 'admin'){
-  // user.forgotPassword = '/seller/admin/forgot-password'
-  user.forgotPassword = '/admin/forgot-password'
+  user.forgotPassword = '/seller/admin/forgot-password'
+  // user.forgotPassword = '/admin/forgot-password'
 }
 
   //config register
