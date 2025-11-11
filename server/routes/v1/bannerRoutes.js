@@ -15,7 +15,7 @@ import { adminAuth } from "../../middlewares/adminAuth.js";
 
 // Configure router
 export const bannerRouter = Router();
-
+ 
 // Add new banner
 bannerRouter.post("/add-banner", sellerAuth, upload.single("image"), addBanner);
 

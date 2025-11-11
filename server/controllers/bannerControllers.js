@@ -2,7 +2,7 @@ import { Banner } from "../models/bannerModel.js";
 import { Seller } from "../models/sellerModel.js";
 import { catchErrorHandler } from "../utils/catchErrorHandler.js";
 import { cloudinaryInstance } from "../config/cloudinary.js";
-
+ 
 // Add banner
 export const addBanner = async (req, res) => {
   try {
@@ -42,6 +42,7 @@ export const addBanner = async (req, res) => {
 
     // Send response to frontend
     res.json({ message: "Banner added successfully", data: banner });
+    
   } catch (error) {
     // Handle catch error
     catchErrorHandler(res, error);

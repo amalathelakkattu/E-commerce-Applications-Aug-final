@@ -4,7 +4,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   banner: true,
 };
-
+ 
 // Create banner slice
 const bannerSlice = createSlice({
   name: "banner",

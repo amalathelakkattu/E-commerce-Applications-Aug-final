@@ -1,6 +1,6 @@
 import jwt from "jsonwebtoken";
 import { catchErrorHandler } from "../utils/catchErrorHandler.js";
-
+ 
 export const sellerAuth = (req, res, next) => {
   try {
     // Get token

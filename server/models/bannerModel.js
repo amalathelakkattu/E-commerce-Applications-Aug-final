@@ -1,5 +1,5 @@
 import { Schema, model } from "mongoose";
-
+ 
 const bannerSchema = new Schema(
   {
     title: {

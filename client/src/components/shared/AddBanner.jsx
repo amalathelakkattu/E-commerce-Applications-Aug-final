@@ -8,7 +8,7 @@ import toast from "react-hot-toast";
 export const AddBanner = ({ role = "seller" }) => {
   // Get current theme
   const { theme } = useSelector((state) => state.theme);
-
+ 
   // Config navigate
   const navigate = useNavigate();
 
