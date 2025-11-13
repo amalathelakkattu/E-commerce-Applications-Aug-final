@@ -16,9 +16,9 @@ const app = express();
 // Config cors
 app.use(
   cors({
-    //origin: process.env.CORS,
+     origin: process.env.CORS,
     //origin: "http://localhost:5173",
-    origin: ["https://e-commerce-applications-aug-final.vercel.app"],
+    //origin: ["https://e-commerce-applications-aug-final.vercel.app"],
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE"],
   })
