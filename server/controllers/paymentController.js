@@ -3,7 +3,8 @@ import Stripe from "stripe";
 
 // Config stripe
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
-const frontendUrl = "http://localhost:5173";
+//const frontendUrl = "http://localhost:5173";
+const frontendUrl = "https://e-commerce-applications-aug-final.vercel.app";
 
 // Handle checkout
 export const createCheckoutSession = async (req, res, next) => {
