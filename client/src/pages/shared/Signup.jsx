@@ -32,8 +32,8 @@ export const Signup = ({ role = "user" }) => {
   // Handle admin role
   if (role === "admin") {
     (user.role = "admin"),
-      (user.signup_api = "admin/signup"),
-      (user.login_route = "admin/login");
+      (user.signup_api = "/admin/signup"),
+      (user.login_route = "/admin/login");
   }
 
   // Handle on submit

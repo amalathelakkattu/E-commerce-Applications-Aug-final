@@ -49,11 +49,7 @@ export const Header = () => {
             dispatch(setSearchValue(""));
           }}
         >
-          {/* <Link to={"/"} className="nav-link hover">
-            <span className="text-white h1 fw-bold">st</span>
-            <span className="text-secondary h1 fw-bolder">O</span>
-            <span className="text-white h1 fw-bold">re</span>
-          </Link> */}
+          
           <Link
             to={"/"}
             className="nav-link text-decoration-none d-flex align-items-center gap-2"

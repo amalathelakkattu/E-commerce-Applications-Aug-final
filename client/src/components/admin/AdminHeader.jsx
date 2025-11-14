@@ -67,11 +67,7 @@ export const AdminHeader = () => {
     >
       <Container fluid>
         <Navbar.Brand className="mb-2 me-4">
-          {/* <Link to={"/admin"} className="nav-link hover">
-            <span className="text-white h1 fw-bold">st</span>
-            <span className="text-secondary h1 fw-bolder">O</span>
-            <span className="text-white h1 fw-bold">re</span>
-          </Link> */}
+          
           <Link
             to={"/"}
             className="nav-link text-decoration-none d-flex align-items-center gap-2"
