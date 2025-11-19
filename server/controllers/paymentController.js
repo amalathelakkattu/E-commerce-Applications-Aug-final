@@ -4,7 +4,10 @@ import Stripe from "stripe";
 // Config stripe
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 //const frontendUrl = "http://localhost:5173";
-const frontendUrl = "https://e-commerce-applications-aug-final.vercel.app";
+//const frontendUrl = "https://e-commerce-applications-aug-final.vercel.app";
+//CORS=http://localhost:5173
+//CORS=https://e-commerce-applications-aug-final.vercel.app
+
 
 // Handle checkout
 export const createCheckoutSession = async (req, res, next) => {
@@ -40,10 +43,10 @@ export const createCheckoutSession = async (req, res, next) => {
       mode: "payment",
       success_url: `success`,
       cancel_url: `cancel`,
-      // success_url: `${process.env.CORS}/user/payment-success`,
-      // cancel_url: `${process.env.CORS}/user/payment-cancel`,
-      success_url: `${frontendUrl}/user/payment-success`,
-      cancel_url: `${frontendUrl}/user/payment-cancel`,
+      success_url: `${process.env.CORS}/user/payment-success`,
+      cancel_url: `${process.env.CORS}/user/payment-cancel`,
+      // success_url: `${frontendUrl}/user/payment-success`,
+      // cancel_url: `${frontendUrl}/user/payment-cancel`,
       shipping_address_collection: {
         allowed_countries: ["IN"],
       },
