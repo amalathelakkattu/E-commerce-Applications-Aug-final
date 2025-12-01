@@ -46,7 +46,7 @@ export const Login = ({ role = "user" }) => {
     user.role = "admin";
     user.login_api = "/admin/login";
     user.profile_route = "/admin/profile";
-    user.signup_route = "/admin/signup";
+    //user.signup_route = "/admin/signup";
     user.home_route = "/admin";
     user.forgotPassword = "/admin/forgot-password";
   }
@@ -121,7 +121,19 @@ export const Login = ({ role = "user" }) => {
             <span>Forgot password?</span>
           </Link>
         </div>
-        <div>
+        {role !== "admin" && (
+          <div>
+            <span className="text-secondary">Don't have an account?</span>{" "}
+            <Link
+              className="text-decoration-none text-black"
+              to={user.signup_route}
+            >
+              Signup
+            </Link>
+          </div>
+        )}
+
+        {/* <div>
           <span className="text-secondary">Don't have an account?</span>{" "}
           <Link
             className="text-decoration-none text-black"
@@ -129,7 +141,7 @@ export const Login = ({ role = "user" }) => {
           >
             Signup
           </Link>
-        </div>
+        </div> */}
       </form>
     </div>
   );

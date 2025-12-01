@@ -290,7 +290,7 @@ export const router = createBrowserRouter([
     element: <AdminLayout />,
     errorElement: <ErrorPage role="admin" />,
     children: [
-      { path: "signup", element: <Signup role="admin" /> },
+      // { path: "signup", element: <Signup role="admin" /> },
       { path: "login", element: <Login role="admin" /> },
       {
         path: "forgot-password",
